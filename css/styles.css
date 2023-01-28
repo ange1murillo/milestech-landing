@@ -194,6 +194,7 @@ table {
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   position: absolute;
   top: 0;
   left: 0;
@@ -233,6 +234,7 @@ table {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
+    background-attachment: scroll;
     position: absolute;
     top: 0;
     left: 0;
