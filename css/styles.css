@@ -192,6 +192,8 @@ table {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
   position: absolute;
   top: 0;
   left: 0;
@@ -229,6 +231,8 @@ table {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
     position: absolute;
     top: 0;
     left: 0;
@@ -510,6 +514,8 @@ table {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
   top: 0;
   left: 0;
   width: 100%;
@@ -574,6 +580,8 @@ table {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
     top: 0;
     left: 0;
     width: 100%;
@@ -1059,7 +1067,6 @@ table {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     top: 0;
     left: 0;
     width: 100%;
