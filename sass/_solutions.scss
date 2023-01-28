@@ -1,0 +1,136 @@
+.solutions {
+  padding: 6.25rem 0px 0px;
+  .solutions__row {
+    display: flex;
+    flex-wrap: wrap;
+    .solutions__col {
+      width: 25%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 25px;
+      &-img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+      }
+
+      &-title {
+        text-align: center;
+        font-size: 1.8rem;
+        padding-bottom: 30px;
+      }
+
+      &-description {
+        line-height: 1.7;
+      }
+    }
+  }
+}
+.solutions__col-icon {
+  display: block;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+@media (max-width: 769px) {
+  .solutions {
+    .solutions__row {
+      .solutions__col {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .solutions {
+    padding: 6.25rem 0px 0px;
+    .solutions__row {
+      display: flex;
+      flex-wrap: wrap;
+      .solutions__col {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 25px;
+        &-img-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 200px;
+          overflow: hidden;
+        }
+
+        &-title {
+          text-align: center;
+          font-size: 1.8rem;
+          padding-bottom: 30px;
+        }
+
+        &-description {
+          line-height: 1.7;
+        }
+      }
+    }
+  }
+  .solutions__col-icon {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 320px) {
+  .solutions {
+    padding: 6.25rem 0px 0px;
+    .solutions__row {
+      display: flex;
+      flex-wrap: wrap;
+      .solutions__col {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+        &-img-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 200px;
+          overflow: hidden;
+        }
+
+        &-title {
+          text-align: center;
+          font-size: 1.8rem;
+          padding-bottom: 30px;
+        }
+
+        &-description {
+          line-height: 1.7;
+        }
+      }
+    }
+  }
+  .solutions__col-icon {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+}

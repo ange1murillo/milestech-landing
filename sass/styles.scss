@@ -1,0 +1,91 @@
+@import "variables";
+@import "reset";
+@import "pageHeader";
+@import "homepageHero";
+@import "solutions";
+@import "goals";
+@import "letsCreateCta";
+@import "plan";
+@import "testimonial";
+@import "footerCta";
+@import "footer";
+
+html,
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1280px){
+   .container {
+       max-width: 1100px;
+    margin: 0 auto;
+   } 
+}
+
+@media (max-width: 1200px){
+   .container {
+       max-width: 1000px;
+    margin: 0 auto;
+   } 
+}
+
+@media (max-width: 1024px) {
+  .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+}
+
+@media (max-width: 900px){
+   .container {
+       max-width: 800px;
+       margin: 0 auto;
+   } 
+}
+
+// @media (max-width: 1023px) and (min-width: 769px){
+//   .container {
+//   max-width: 600px;
+//   margin: 0 auto;
+// }
+// }
+
+@media(max-width: 769px){
+  .container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+}
+
+@media (max-width: 600px){
+   .container {
+       max-width: 500px;
+       margin: 0 auto;
+   } 
+}
+
+@media (max-width: 500px){
+   .container {
+       max-width: 400px;
+       margin: 0 auto;
+   } 
+}
+
+@media (max-width: 425px) {
+  .container {
+  max-width: 300px;
+  margin: 0 auto;
+}
+}
+
+@media (max-width: 320px) {
+  .container {
+  max-width: 250px;
+  margin: 0 auto;
+}
+}

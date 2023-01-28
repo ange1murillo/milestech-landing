@@ -1,0 +1,212 @@
+.testimonial {
+  padding: 10rem 0px 0px;
+  padding-bottom: 8rem;
+
+  &__row {
+    display: flex;
+  }
+
+  &__col {
+    width: 50%;
+    position: relative;
+    padding-right: 4rem;
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      padding-bottom: 25px;
+    }
+
+    .testimonial__col-image {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      z-index: 1;
+      object-fit: contain;
+      transform: rotate(180deg);
+      top: 35px;
+      left: 0;
+      filter: brightness(150%);
+    }
+
+    p {
+      line-height: 1.5;
+      padding-bottom: 25px;
+      position: relative;
+      z-index: 2;
+    }
+
+    &-info {
+      display: flex;
+      align-items: center;
+
+      .testimonial__col-circle {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          position: relative;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .testimonial__col-job-title {
+        padding-left: 20px;
+        h3 {
+          font-size: 1.2rem;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .testimonial {
+    padding: 10rem 0px 0px;
+    padding-bottom: 8rem;
+
+    &__row {
+      display: flex;
+    }
+
+    &__col {
+      width: 50%;
+      position: relative;
+      padding-right: 2rem;
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding-bottom: 25px;
+      }
+
+      .testimonial__col-image {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        z-index: 1;
+        object-fit: contain;
+        transform: rotate(180deg);
+        top: 35px;
+        left: 0;
+        filter: brightness(150%);
+      }
+
+      p {
+        line-height: 1.5;
+        padding-bottom: 25px;
+        position: relative;
+        z-index: 2;
+        font-size: 0.8rem;
+      }
+
+      &-info {
+        display: flex;
+        align-items: center;
+
+        .testimonial__col-circle {
+          border-radius: 50%;
+          width: 100px;
+          height: 100px;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            position: relative;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .testimonial__col-job-title {
+          padding-left: 20px;
+          h3 {
+            font-size: 1.2rem;
+            padding-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonial {
+    padding: 10rem 0px 0px;
+    padding-bottom: 8rem;
+
+    &__row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    &__col {
+      width: 100%;
+      position: relative;
+      padding-right: 0;
+
+      &:not(:last-child) {
+        padding-bottom: 2.5rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding-bottom: 25px;
+      }
+
+      .testimonial__col-image {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        z-index: 1;
+        object-fit: contain;
+        transform: rotate(180deg);
+        top: 35px;
+        left: 0;
+        filter: brightness(150%);
+      }
+
+      p {
+        line-height: 1.5;
+        padding-bottom: 25px;
+        position: relative;
+        z-index: 2;
+      }
+
+      &-info {
+        display: flex;
+        align-items: center;
+
+        .testimonial__col-circle {
+          border-radius: 50%;
+          width: 100px;
+          height: 100px;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            position: relative;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .testimonial__col-job-title {
+          padding-left: 20px;
+          h3 {
+            font-size: 1.2rem;
+            padding-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}

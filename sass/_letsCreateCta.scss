@@ -1,0 +1,137 @@
+.lets-create-cta {
+  padding: 6.25rem 0px 0px;
+
+  &__row {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/images/businessmen-min.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 6.25rem 0;
+  }
+
+  &__col {
+    color: $color_white;
+    // padding-left: 4rem;
+    width: 80%;
+
+    &-title {
+      font-size: 2rem;
+      padding-bottom: 25px;
+    }
+
+    &-description {
+      line-height: 2;
+    }
+
+    &-btn {
+      background: transparent;
+      border: 2px solid $color_white;
+      border-radius: 20px;
+      display: inline-block;
+      padding: 10px 30px;
+      transition: all 0.8s ease-in-out;
+      text-align: center;
+      text-transform: uppercase;
+      color: $color_white;
+      margin-top: 25px;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: $color_white;
+      }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .lets-create-cta {
+    padding: 6.25rem 0px 0px;
+
+    &__row {
+      position: relative;
+      min-height: 80vh;
+    }
+
+    &__col {
+      width: 100%;
+
+      &-title {
+        font-size: 1.5rem;
+        padding-bottom: 25px;
+      }
+
+      &-description {
+        line-height: 1.8;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .lets-create-cta {
+    padding: 6.25rem 0px 0px;
+
+    &__row {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("/images/businessmen-min.jpg");
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      padding: 6.25rem 0;
+    }
+
+    &__col {
+      color: $color_white;
+      // padding-left: 4rem;
+      width: 100%;
+
+      &-title {
+        font-size: 2rem;
+        padding-bottom: 25px;
+      }
+
+      &-description {
+        line-height: 2;
+      }
+
+      &-btn {
+        background: transparent;
+        border: 2px solid $color_white;
+        border-radius: 20px;
+        display: inline-block;
+        padding: 10px 30px;
+        transition: all 0.8s ease-in-out;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color_white;
+        margin-top: 25px;
+        cursor: pointer;
+
+        a {
+          text-decoration: none;
+          color: $color_white;
+        }
+      }
+    }
+  }
+}
