@@ -40,6 +40,7 @@ const animateOnScroll = new IntersectionObserver(function (
     if (!entry.isIntersecting){
       return;
     }else{
+      entry.target.style.willChange = "opacity, transform";
       entry.target.classList.add("animate");
       animateOnScroll.unobserve(entry.target);
     }
