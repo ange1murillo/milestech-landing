@@ -45,10 +45,19 @@
       color: $color_white;
       margin-top: 25px;
       cursor: pointer;
+      transition: 0.3s;
 
       a {
         text-decoration: none;
         color: $color_white;
+      }
+
+      &:hover{
+        background: white;
+
+        a{
+          color: #000;
+        }
       }
     }
   }
@@ -126,6 +135,7 @@
         color: $color_white;
         margin-top: 25px;
         cursor: pointer;
+        transition: 0.3s;
 
         a {
           text-decoration: none;

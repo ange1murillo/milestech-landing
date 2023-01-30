@@ -13,11 +13,43 @@
 html,
 body {
   font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4{
+  line-height: 1.2;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.from-left{
+  transform: translate(-50%);
+}
+
+.from-right{
+  transform: translate(50%);
+}
+
+.from-left, .from-right{
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-left.animate, .from-right.animate{
+  transform: translate(0);
+  opacity: 1;
+}
+
+.fade-in{
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.animate{
+  opacity: 1;
 }
 
 @media (max-width: 1280px){
@@ -66,7 +98,10 @@ body {
    .container {
        max-width: 500px;
        margin: 0 auto;
-   } 
+   }
+   p{
+     font-size: 14px;
+   }
 }
 
 @media (max-width: 500px){

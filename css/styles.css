@@ -259,6 +259,9 @@ table {
     line-height: 1.5;
     font-style: italic;
   }
+  .home-page-hero__info-quote p {
+    font-size: 1rem;
+  }
 }
 @media (max-width: 425px) {
   .home-page-hero__info {
@@ -337,7 +340,7 @@ table {
   }
   .solutions .solutions__row .solutions__col-title {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     padding-bottom: 30px;
   }
   .solutions .solutions__row .solutions__col-description {
@@ -548,10 +551,17 @@ table {
   color: white;
   margin-top: 25px;
   cursor: pointer;
+  transition: 0.3s;
 }
 .lets-create-cta__col-btn a {
   text-decoration: none;
   color: white;
+}
+.lets-create-cta__col-btn:hover {
+  background: white;
+}
+.lets-create-cta__col-btn:hover a {
+  color: #000;
 }
 
 @media (max-width: 769px) {
@@ -615,6 +625,7 @@ table {
     color: white;
     margin-top: 25px;
     cursor: pointer;
+    transition: 0.3s;
   }
   .lets-create-cta__col-btn a {
     text-decoration: none;
@@ -922,7 +933,6 @@ table {
     padding-bottom: 25px;
     position: relative;
     z-index: 2;
-    font-size: 0.8rem;
   }
   .testimonial__col-info {
     display: flex;
@@ -1133,12 +1143,16 @@ table {
 .footer__socials a {
   text-decoration: none;
   color: #6e6d6d;
+  transition: 0.3s;
 }
 .footer__socials a i {
   font-size: 1.5rem;
 }
 .footer__socials a:not(:last-child) {
   padding-right: 20px;
+}
+.footer__socials a:hover {
+  color: white;
 }
 .footer__info {
   display: flex;
@@ -1190,11 +1204,43 @@ table {
 html,
 body {
   font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.from-left {
+  transform: translate(-50%);
+}
+
+.from-right {
+  transform: translate(50%);
+}
+
+.from-left, .from-right {
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-left.animate, .from-right.animate {
+  transform: translate(0);
+  opacity: 1;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.animate {
+  opacity: 1;
 }
 
 @media (max-width: 1280px) {
@@ -1231,6 +1277,9 @@ body {
   .container {
     max-width: 500px;
     margin: 0 auto;
+  }
+  p {
+    font-size: 14px;
   }
 }
 @media (max-width: 500px) {

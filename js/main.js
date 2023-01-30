@@ -23,3 +23,34 @@ document.body.addEventListener("click", (event) => {
     overlay.classList.remove("overlay-open");
   }
 });
+
+const faders = document.querySelectorAll('.fade-in');
+const sliders = document.querySelectorAll('.slide-in');
+
+const animateOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px -250px 0px"
+};
+
+const animateOnScroll = new IntersectionObserver(function (
+  entries,
+  animateOnScroll
+) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting){
+      return;
+    }else{
+      entry.target.classList.add("animate");
+      animateOnScroll.unobserve(entry.target);
+    }
+  });
+},
+animateOptions); 
+
+faders.forEach(fader => {
+  animateOnScroll.observe(fader);
+})
+
+sliders.forEach((slider) => {
+  animateOnScroll.observe(slider);
+});

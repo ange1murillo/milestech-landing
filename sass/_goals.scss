@@ -14,7 +14,6 @@
     width: 50%;
 
     &-img-container {
-      // padding-right: 80px;
       img {
         width: 100%;
       }
@@ -38,6 +37,7 @@
     }
   }
 }
+
 
 @media (max-width: 1024px) {
   .goals {
