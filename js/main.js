@@ -61,7 +61,7 @@ const sliders = document.querySelectorAll(".slide-in");
 
 const animateOptions = {
   threshold: 0,
-  rootMargin: "0px 0px -200px 0px",
+  rootMargin: "0px 0px -250px 0px",
 };
 
 const animateOnScroll = new IntersectionObserver(function (entries) {
