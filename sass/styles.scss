@@ -10,9 +10,9 @@
 @import "footerCta";
 @import "footer";
 
-html{
-  scroll-behavior: smooth;
-}
+// html{
+//   scroll-behavior: smooth;
+// }
 
 html,
 body {
@@ -29,33 +29,33 @@ h1, h2, h3, h4{
   margin: 0 auto;
 }
 
-.from-left{
-  transform: translate(-50%);
-}
+// .from-left{
+//   transform: translate(-50%);
+// }
 
-.from-right{
-  transform: translate(50%);
-}
+// .from-right{
+//   transform: translate(50%);
+// }
 
-.from-left, .from-right{
+.slide-in-left, .slide-in-right{
   // transition: opacity 100ms ease-in, transform 500ms ease-in;
-  transition: opacity 250ms ease-in, transform 500ms ease-in;
+  // transition: opacity 250ms ease-in, transform 500ms ease-in;
   opacity: 0;
 }
 
-.from-left.animate, .from-right.animate{
-  transform: translate(0);
+.slide-in-left.animated, .slide-in-right.animated{
+  // transform: translate(0);
   opacity: 1;
 }
 
-.fade-in{
-  opacity: 0;
-  transition: opacity 250ms ease-in;
-}
+// .fade-in{
+//   opacity: 0;
+//   transition: opacity 250ms ease-in;
+// }
 
-.fade-in.animate{
-  opacity: 1;
-}
+// .fade-in.animate{
+//   opacity: 1;
+// }
 
 @media (max-width: 1280px){
    .container {

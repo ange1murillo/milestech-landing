@@ -56,32 +56,46 @@ document.body.addEventListener("click", (event) => {
 //   animateOnScroll.observe(slider);
 // });
 
-const faders = document.querySelectorAll(".fade-in");
-const sliders = document.querySelectorAll(".slide-in");
+/*************** ***********************************/
+
+const slideInRight = document.querySelectorAll(".slide-in-right");
+const slideInLeft = document.querySelectorAll(".slide-in-left");
 
 const animateOptions = {
   threshold: 0,
-  rootMargin: "0px 0px -250px 0px",
+  rootMargin: "0px 0px -260px 0px",
 };
 
-const animateOnScroll = new IntersectionObserver(function (entries) {
+const animateSlideInRight = new IntersectionObserver(function (entries) {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
       return;
     } else {
-      requestAnimationFrame(() => {
-        entry.target.style.willChange = "opacity, transform";
-        entry.target.classList.add("animate");
-        animateOnScroll.unobserve(entry.target);
-      });
+        // entry.target.style.willChange = "opacity, transform";
+        entry.target.classList.add("animated");
+        entry.target.classList.add("slideInRight");
+        animateSlideInRight.unobserve(entry.target);
     }
   });
 }, animateOptions);
 
-faders.forEach((fader) => {
-  animateOnScroll.observe(fader);
+const animateSlideInLeft = new IntersectionObserver(function (entries) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      // entry.target.style.willChange = "opacity, transform";
+      entry.target.classList.add("animated");
+      entry.target.classList.add("slideInLeft");
+      animateSlideInLeft.unobserve(entry.target);
+    }
+  });
+}, animateOptions);
+
+slideInRight.forEach((sInRight) => {
+  animateSlideInRight.observe(sInRight);
 });
 
-sliders.forEach((slider) => {
-  animateOnScroll.observe(slider);
+slideInLeft.forEach((sInLeft) => {
+  animateSlideInLeft.observe(sInLeft);
 });

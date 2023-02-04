@@ -1201,10 +1201,6 @@ table {
     padding-bottom: 25px;
   }
 }
-html {
-  scroll-behavior: smooth;
-}
-
 html,
 body {
   font-family: sans-serif;
@@ -1220,30 +1216,11 @@ h1, h2, h3, h4 {
   margin: 0 auto;
 }
 
-.from-left {
-  transform: translate(-50%);
-}
-
-.from-right {
-  transform: translate(50%);
-}
-
-.from-left, .from-right {
-  transition: opacity 250ms ease-in, transform 500ms ease-in;
+.slide-in-left, .slide-in-right {
   opacity: 0;
 }
 
-.from-left.animate, .from-right.animate {
-  transform: translate(0);
-  opacity: 1;
-}
-
-.fade-in {
-  opacity: 0;
-  transition: opacity 250ms ease-in;
-}
-
-.fade-in.animate {
+.slide-in-left.animated, .slide-in-right.animated {
   opacity: 1;
 }
 
