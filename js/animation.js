@@ -14,7 +14,7 @@ gsap.fromTo(
     ease: "power2.inOut",
     scrollTrigger: {
       trigger: ".goals__acheive.slide-in-left",
-      start: "top 70%",
+      start: "top center",
     },
   }
 );
@@ -31,7 +31,7 @@ gsap.fromTo(
     ease: "power2.inOut",
     scrollTrigger: {
       trigger: ".goals__acheive.slide-in-right",
-      start: "top 70%",
+      start: "top center",
     },
   }
 );
@@ -48,7 +48,7 @@ gsap.fromTo(
     ease: "power2.inOut",
     scrollTrigger: {
       trigger: ".goals__strategy.slide-in-left",
-      start: "top 60%",
+      start: "top center",
     },
   }
 );
@@ -65,7 +65,7 @@ gsap.fromTo(
     ease: "power2.inOut",
     scrollTrigger: {
       trigger: ".goals__strategy.slide-in-right",
-      start: "top 60%",
+      start: "top center",
     },
   }
 );
