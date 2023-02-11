@@ -1,6 +1,7 @@
 /** Google Chrome Browser Gsap Compatible **/
 
 gsap.registerPlugin(ScrollTrigger);
+
 gsap.fromTo(
   ".goals__acheive.slide-in-left",
   {
@@ -10,12 +11,13 @@ gsap.fromTo(
   {
     transform: "translateX(0)",
     opacity: 1,
-    duration: 1.5,
+    duration: 1.25,
     ease: "power2.inOut",
     scrollTrigger: {
       trigger: ".goals__acheive.slide-in-left",
       start: "top center",
     },
+    stagger: 0.2,
   }
 );
 gsap.fromTo(
@@ -27,12 +29,13 @@ gsap.fromTo(
   {
     transform: "translateX(0)",
     opacity: 1,
-    duration: 1.5,
+    duration: 1.25,
     ease: "power2.inOut",
     scrollTrigger: {
       trigger: ".goals__acheive.slide-in-right",
       start: "top center",
     },
+    stagger: 0.2,
   }
 );
 gsap.fromTo(
@@ -44,12 +47,13 @@ gsap.fromTo(
   {
     transform: "translateX(0)",
     opacity: 1,
-    duration: 1.5,
+    duration: 1.25,
     ease: "power2.inOut",
     scrollTrigger: {
       trigger: ".goals__strategy.slide-in-left",
       start: "top center",
     },
+    stagger: 0.3,
   }
 );
 gsap.fromTo(
@@ -61,12 +65,13 @@ gsap.fromTo(
   {
     transform: "translateX(0)",
     opacity: 1,
-    duration: 1.5,
+    duration: 1.25,
     ease: "power2.inOut",
     scrollTrigger: {
       trigger: ".goals__strategy.slide-in-right",
       start: "top center",
     },
+    stagger: 0.3,
   }
 );
 

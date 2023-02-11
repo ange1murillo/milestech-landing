@@ -188,13 +188,10 @@ table {
 }
 .home-page-hero__bg {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/shaking-hands-min.webp");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   position: absolute;
   top: 0;
   left: 0;
@@ -228,9 +225,6 @@ table {
   }
   .home-page-hero__bg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/shaking-hands-min.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -515,13 +509,10 @@ table {
 }
 .lets-create-cta__row {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/businessmen-min.webp");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   top: 0;
   left: 0;
   width: 100%;
@@ -589,11 +580,8 @@ table {
   }
   .lets-create-cta__row {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/businessmen-min.webp");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
-    background-position: top center;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     top: 0;
@@ -1025,13 +1013,10 @@ table {
 }
 .footer-cta__row {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/climbing-stairs-min.webp");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   top: 0;
   left: 0;
   width: 100%;
@@ -1077,9 +1062,6 @@ table {
 @media (max-width: 600px) {
   .footer-cta__row {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/climbing-stairs-min.webp");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
