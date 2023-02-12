@@ -10,13 +10,13 @@ if (isMobile) {
   gsap.fromTo(
     ".goals__acheive.slide-in-left",
     {
-      transform: "translateX(-300px)",
+      transform: "translateX(-150px)",
       opacity: 0,
     },
     {
       transform: "translateX(0)",
       opacity: 1,
-      duration: 0.75,
+      duration: 1,
       ease: "power2.inOut",
       scrollTrigger: {
         trigger: ".goals__acheive.slide-in-left",
@@ -27,13 +27,13 @@ if (isMobile) {
   gsap.fromTo(
     ".goals__acheive.slide-in-right",
     {
-      transform: "translateX(300px)",
+      transform: "translateX(150px)",
       opacity: 0,
     },
     {
       transform: "translateX(0)",
       opacity: 1,
-      duration: 0.75,
+      duration: 1,
       ease: "power2.inOut",
       scrollTrigger: {
         trigger: ".goals__acheive.slide-in-right",
@@ -44,13 +44,13 @@ if (isMobile) {
   gsap.fromTo(
     ".goals__strategy.slide-in-left",
     {
-      transform: "translateX(-300px)",
+      transform: "translateX(-150px)",
       opacity: 0,
     },
     {
       transform: "translateX(0)",
       opacity: 1,
-      duration: 0.75,
+      duration: 1,
       ease: "power2.inOut",
       scrollTrigger: {
         trigger: ".goals__strategy.slide-in-left",
@@ -61,13 +61,13 @@ if (isMobile) {
   gsap.fromTo(
     ".goals__strategy.slide-in-right",
     {
-      transform: "translateX(300px)",
+      transform: "translateX(150px)",
       opacity: 0,
     },
     {
       transform: "translateX(0)",
       opacity: 1,
-      duration: 0.75,
+      duration: 1,
       ease: "power2.inOut",
       scrollTrigger: {
         trigger: ".goals__strategy.slide-in-right",
@@ -79,13 +79,13 @@ if (isMobile) {
   gsap.fromTo(
     ".goals__acheive.slide-in-left",
     {
-      transform: "translateX(-500px)",
+      transform: "translateX(-250px)",
       opacity: 0,
     },
     {
       transform: "translateX(0)",
       opacity: 1,
-      duration: 1.25,
+      duration: 1,
       ease: "power2.inOut",
       scrollTrigger: {
         trigger: ".goals__acheive.slide-in-left",
@@ -96,13 +96,13 @@ if (isMobile) {
   gsap.fromTo(
     ".goals__acheive.slide-in-right",
     {
-      transform: "translateX(500px)",
+      transform: "translateX(250px)",
       opacity: 0,
     },
     {
       transform: "translateX(0)",
       opacity: 1,
-      duration: 1.25,
+      duration: 1,
       ease: "power2.inOut",
       scrollTrigger: {
         trigger: ".goals__acheive.slide-in-right",
@@ -113,13 +113,13 @@ if (isMobile) {
   gsap.fromTo(
     ".goals__strategy.slide-in-left",
     {
-      transform: "translateX(-500px)",
+      transform: "translateX(-250px)",
       opacity: 0,
     },
     {
       transform: "translateX(0)",
       opacity: 1,
-      duration: 1.25,
+      duration: 1,
       ease: "power2.inOut",
       scrollTrigger: {
         trigger: ".goals__strategy.slide-in-left",
@@ -130,13 +130,13 @@ if (isMobile) {
   gsap.fromTo(
     ".goals__strategy.slide-in-right",
     {
-      transform: "translateX(500px)",
+      transform: "translateX(250px)",
       opacity: 0,
     },
     {
       transform: "translateX(0)",
       opacity: 1,
-      duration: 1.25,
+      duration: 1,
       ease: "power2.inOut",
       scrollTrigger: {
         trigger: ".goals__strategy.slide-in-right",
