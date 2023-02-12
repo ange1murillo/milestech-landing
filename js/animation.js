@@ -20,7 +20,7 @@ if (isMobile) {
       ease: "power2.inOut",
       scrollTrigger: {
         trigger: ".goals__acheive.slide-in-left",
-        start: "top center",
+        transformOrigin: "top center",
       },
     }
   );
@@ -37,7 +37,7 @@ if (isMobile) {
       ease: "power2.inOut",
       scrollTrigger: {
         trigger: ".goals__acheive.slide-in-right",
-        start: "top center",
+        transformOrigin: "top center",
       },
     }
   );
@@ -54,7 +54,7 @@ if (isMobile) {
       ease: "power2.inOut",
       scrollTrigger: {
         trigger: ".goals__strategy.slide-in-left",
-        start: "top center",
+        transformOrigin: "top center",
       },
     }
   );
@@ -71,7 +71,7 @@ if (isMobile) {
       ease: "power2.inOut",
       scrollTrigger: {
         trigger: ".goals__strategy.slide-in-right",
-        start: "top center",
+        transformOrigin: "top center",
       },
     }
   );
