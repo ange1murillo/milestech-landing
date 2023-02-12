@@ -16,8 +16,7 @@ gsap.fromTo(
     scrollTrigger: {
       trigger: ".goals__acheive.slide-in-left",
       start: "top center",
-    },
-    stagger: 0.2,
+    }
   }
 );
 gsap.fromTo(
@@ -34,8 +33,7 @@ gsap.fromTo(
     scrollTrigger: {
       trigger: ".goals__acheive.slide-in-right",
       start: "top center",
-    },
-    stagger: 0.2,
+    }
   }
 );
 gsap.fromTo(
@@ -52,8 +50,7 @@ gsap.fromTo(
     scrollTrigger: {
       trigger: ".goals__strategy.slide-in-left",
       start: "top center",
-    },
-    stagger: 0.3,
+    }
   }
 );
 gsap.fromTo(
@@ -70,8 +67,7 @@ gsap.fromTo(
     scrollTrigger: {
       trigger: ".goals__strategy.slide-in-right",
       start: "top center",
-    },
-    stagger: 0.3,
+    }
   }
 );
 
