@@ -10,7 +10,7 @@ if (isMobile) {
   gsap.fromTo(
     ".goals__acheive.slide-in-left",
     {
-      transform: "translateX(-150px)",
+      transform: "translateX(-200px)",
       opacity: 0,
     },
     {
@@ -27,7 +27,7 @@ if (isMobile) {
   gsap.fromTo(
     ".goals__acheive.slide-in-right",
     {
-      transform: "translateX(150px)",
+      transform: "translateX(200px)",
       opacity: 0,
     },
     {
@@ -44,7 +44,7 @@ if (isMobile) {
   gsap.fromTo(
     ".goals__strategy.slide-in-left",
     {
-      transform: "translateX(-150px)",
+      transform: "translateX(-200px)",
       opacity: 0,
     },
     {
@@ -61,7 +61,7 @@ if (isMobile) {
   gsap.fromTo(
     ".goals__strategy.slide-in-right",
     {
-      transform: "translateX(150px)",
+      transform: "translateX(200px)",
       opacity: 0,
     },
     {
