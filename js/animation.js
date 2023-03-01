@@ -1,151 +1,157 @@
-/** Google Chrome Browser Gsap Compatible **/
 
-gsap.registerPlugin(ScrollTrigger);
+const imageUrls = [
+  "https://angelmurillo.com/wp-content/uploads/meeting-room.webp",
+  "https://angelmurillo.com/wp-content/uploads/team-collaborating.webp",
+];
 
+const images = [];
 
-
-const isMobile = window.matchMedia("(max-width: 767px)").matches;
-
-if (isMobile) {
-  gsap.fromTo(
-    ".goals__acheive.slide-in-left",
-    {
-      transform: "translateX(-200px)",
-      opacity: 0,
-    },
-    {
-      transform: "translateX(0)",
-      opacity: 1,
-      duration: 1,
-      ease: "power2.inOut",
-      scrollTrigger: {
-        trigger: ".goals__acheive.slide-in-left",
-        transformOrigin: "top center",
-      },
-    }
-  );
-  gsap.fromTo(
-    ".goals__acheive.slide-in-right",
-    {
-      transform: "translateX(200px)",
-      opacity: 0,
-    },
-    {
-      transform: "translateX(0)",
-      opacity: 1,
-      duration: 1,
-      ease: "power2.inOut",
-      scrollTrigger: {
-        trigger: ".goals__acheive.slide-in-right",
-        transformOrigin: "top center",
-      },
-    }
-  );
-  gsap.fromTo(
-    ".goals__strategy.slide-in-left",
-    {
-      transform: "translateX(-200px)",
-      opacity: 0,
-    },
-    {
-      transform: "translateX(0)",
-      opacity: 1,
-      duration: 1,
-      ease: "power2.inOut",
-      scrollTrigger: {
-        trigger: ".goals__strategy.slide-in-left",
-        transformOrigin: "top center",
-      },
-    }
-  );
-  gsap.fromTo(
-    ".goals__strategy.slide-in-right",
-    {
-      transform: "translateX(200px)",
-      opacity: 0,
-    },
-    {
-      transform: "translateX(0)",
-      opacity: 1,
-      duration: 1,
-      ease: "power2.inOut",
-      scrollTrigger: {
-        trigger: ".goals__strategy.slide-in-right",
-        transformOrigin: "top center",
-      },
-    }
-  );
-}else{
-  gsap.fromTo(
-    ".goals__acheive.slide-in-left",
-    {
-      transform: "translateX(-250px)",
-      opacity: 0,
-    },
-    {
-      transform: "translateX(0)",
-      opacity: 1,
-      duration: 1,
-      ease: "power2.inOut",
-      scrollTrigger: {
-        trigger: ".goals__acheive.slide-in-left",
-        start: "top center",
-      },
-    }
-  );
-  gsap.fromTo(
-    ".goals__acheive.slide-in-right",
-    {
-      transform: "translateX(250px)",
-      opacity: 0,
-    },
-    {
-      transform: "translateX(0)",
-      opacity: 1,
-      duration: 1,
-      ease: "power2.inOut",
-      scrollTrigger: {
-        trigger: ".goals__acheive.slide-in-right",
-        start: "top center",
-      },
-    }
-  );
-  gsap.fromTo(
-    ".goals__strategy.slide-in-left",
-    {
-      transform: "translateX(-250px)",
-      opacity: 0,
-    },
-    {
-      transform: "translateX(0)",
-      opacity: 1,
-      duration: 1,
-      ease: "power2.inOut",
-      scrollTrigger: {
-        trigger: ".goals__strategy.slide-in-left",
-        start: "top center",
-      },
-    }
-  );
-  gsap.fromTo(
-    ".goals__strategy.slide-in-right",
-    {
-      transform: "translateX(250px)",
-      opacity: 0,
-    },
-    {
-      transform: "translateX(0)",
-      opacity: 1,
-      duration: 1,
-      ease: "power2.inOut",
-      scrollTrigger: {
-        trigger: ".goals__strategy.slide-in-right",
-        start: "top center",
-      },
-    }
-  );
+for (let i = 0; i < imageUrls.length; i++) {
+  const img = new Image();
+  img.src = imageUrls[i];
+  images.push(img);
 }
 
+// Wait for all the images to be fully loaded
+Promise.all(
+  images.map((img) => {
+    return new Promise((resolve) => {
+      img.onload = resolve;
+      console.log("images loaded!");
+    });
+  })
+).then(() => {
+  const mediaQuery = window.matchMedia("(min-width: 769px)");
+
+  function slideIn(element, trigger, amount) {
+    if (mediaQuery.matches) {
+      gsap.from(element, {
+        // ease: "power2.inOut",
+        ease: "power1.out",
+        duration: 0.5,
+        stagger: 0.15,
+        autoAlpha: 0.01,
+        x: amount,
+        scrollTrigger: {
+          trigger: trigger,
+          start: "top bottom-=40%",
+          toggleActions: "play reverse play reverse",
+        },
+      });
+    }
+  }
+
+  const goalsRows = document.querySelectorAll(".goals__row");
+
+  goalsRows.forEach((row) => {
+    const slideInLeftElements = row.querySelectorAll(".slide-in-left");
+    const slideInRightElements = row.querySelectorAll(".slide-in-right");
+
+    slideInLeftElements.forEach((element) => {
+      const trigger = row;
+      const amount = -200;
+      slideIn(element, trigger, amount);
+    });
+
+    slideInRightElements.forEach((element) => {
+      const trigger = row;
+      const amount = 200;
+      slideIn(element, trigger, amount);
+    });
+  });
+});
+
+/** Google Chrome Browser Gsap Compatible -Most recent after newest- **/
+
+// document.addEventListener("DOMContentLoaded", function () {
+
+
+//   gsap.registerPlugin(ScrollTrigger);
+
+//   /** Current **/
+
+//   gsap.fromTo(
+//     ".goals__acheive.slide-in-left",
+//     {
+//       // transform: "translateX(-200px)",
+//       x: -200,
+//       autoAlpha: 0.01,
+//     },
+//     {
+//       // transform: "translateX(0)",
+//       x: 0,
+//       autoAlpha: 1,
+//       duration: 0.5,
+//       stagger: 0.15,
+//       ease: "power1.out",
+//       scrollTrigger: {
+//         trigger: ".goals__acheive.slide-in-left",
+//         start: "top center",
+//       },
+//     }
+//   );
+//   gsap.fromTo(
+//     ".goals__acheive.slide-in-right",
+//     {
+//       x: 200,
+//       autoAlpha: 0,
+//     },
+//     {
+//       x: 0,
+//       autoAlpha: 1,
+//       duration: 0.5,
+//       stagger: 0.15,
+//       ease: "power2.inOut",
+//       scrollTrigger: {
+//         trigger: ".goals__acheive.slide-in-right",
+//         start: "top center",
+//       },
+//     }
+//   );
+//   gsap.fromTo(
+//     ".goals__strategy.slide-in-left",
+//     {
+//       x: -200,
+//       autoAlpha: 0.01,
+//     },
+//     {
+//       x: 0,
+//       autoAlpha: 1,
+//       duration: 0.5,
+//       stagger: 0.15,
+//       ease: "power2.inOut",
+//       scrollTrigger: {
+//         trigger: ".goals__strategy.slide-in-left",
+//         start: "top center",
+//       },
+//     }
+//   );
+//   gsap.fromTo(
+//     ".goals__strategy.slide-in-right",
+//     {
+//       x: 200,
+//       autoAlpha: 0.01,
+//     },
+//     {
+//       x: 0,
+//       autoAlpha: 1,
+//       duration: 0.5,
+//       stagger: 0.15,
+//       ease: "power2.inOut",
+//       scrollTrigger: {
+//         trigger: ".goals__strategy.slide-in-right",
+//         start: "top center",
+//       },
+//     }
+//   );
+
+//   window.addEventListener("load", function () {
+//     ScrollTrigger.refresh();
+//   });
+//   window.addEventListener("resize", function () {
+//     ScrollTrigger.refresh();
+//   });
+// });
 
 /****** Works on safari and firefox ******/
 
